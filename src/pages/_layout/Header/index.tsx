@@ -1,12 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Logo } from "../../../components";
+import { Button } from "../../../components/Button";
 
 export const Header = () => {
     return(
-        <header>
-            <img alt="Logo" />
-            <Link to="/">Introdução</Link>
-            <Link to="/contact">Contato</Link>
+        <header className="header-container">
+            <Logo className="header-logo" />
+            <nav className="header-nav">
+                <Button title="Introdução" link="/" type="--nav" />
+                <Button title="Contato" link="/contact" type="--nav" />
+            </nav>
         </header>
     );
 }
