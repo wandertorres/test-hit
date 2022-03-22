@@ -3,17 +3,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-end;
+
+        height: 26rem;
     }
 
     &-logo {
-        width: 160px; 
-        height: 61.022px; 
+        margin: 6rem;
+
+        width: 16rem; 
+        height: 6.1022rem; 
     }
 
     &-nav {
-        width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+
+        a {
+            margin: 0 0.5rem;
+        }
     }
 }

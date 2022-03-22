@@ -8,8 +8,8 @@ type propsButton = {
 
 export const Button = ( props: propsButton) => {
     return(
-        <div className={ `button-container button-container${ props.type }` }>
-            <Link className="button-title" to={ props.link }>{ props.title }</Link>
-        </div>
+        <Link className={ `button-container button-container${ props.type }` } to={ props.link }>
+            <span className="button-title">{ props.title }</span>
+        </Link>
     );
 }
