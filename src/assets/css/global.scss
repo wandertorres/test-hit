@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: $WHITE;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
 
 h1, a {
     font-weight: $REGULAR;
-    color: $WHITE;
 }
 
 h1 {

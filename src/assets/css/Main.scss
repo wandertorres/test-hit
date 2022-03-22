@@ -3,7 +3,10 @@
 @import "./global";
 
 //components
-//@import "../../components/Header/styles.scss";
 
 //pages
-//@import "../../pages/Home/styles.scss";
+@import "../../pages/Contact/styles.scss";
+@import "../../pages/Home/styles.scss";
+
+//_layouts
+@import "../../pages/_layout/Header/styles.scss";
