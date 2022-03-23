@@ -7,8 +7,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: $WHITE;
-    
-    //border: 1px solid red;
 }
 
 html {
@@ -37,17 +35,6 @@ h1 {
 
     font-size: 2.2rem;
     line-height: 2.7rem;
-}
-
-a {
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    text-transform: uppercase;
-    color: $WHITE;
-
-    &:hover {
-        text-decoration: none;
-    }
 }
 
 p {
