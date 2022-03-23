@@ -1,7 +1,43 @@
-.section {
+.home {
     &-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 1.6rem;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 2.9rem;
+        
+        height: 3.5rem;
+    }
+}
+
+.line {
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 0.6rem;
+    }
+
+    &-base {
+        background: #707070;
+        border: 0.1rem solid #707070;
+
+        width: 100%;
+    }
+
+    &-effect {
+        position: absolute;
+
+        width: 2rem;
+        height: 0.6rem;
+
+        background: transparent linear-gradient(180deg, #EA916B 0%, #E05A4D 100%) 0% 0% no-repeat padding-box;
     }
 }
