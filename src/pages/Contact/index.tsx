@@ -14,10 +14,10 @@ export const Contact = () => {
 
             <form className="contact-form">
                 <div className="form-input_area">
-                    <input type="text" />
-                    <input type="text" />
+                    <input type="text" placeholder="Nome*" />
+                    <input type="text" placeholder="E-mail*" />
                 </div>
-                <textarea className="form-text_area" name="" id=""></textarea>
+                <textarea className="form-text_area" placeholder="Mensagem*"></textarea>
                 <Button title="Salvar" link="/" type="--form" />
             </form>
         </section>
