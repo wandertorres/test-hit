@@ -7,24 +7,24 @@
     font-family: 'Montserrat', sans-serif;
     color: $WHITE;
     
-    border: 1px solid red;
+    //border: 1px solid red;
 }
 
 html {
     background: #2D2D2D 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     font-size: 62.5%;
+
+    height: 100vh;
 }
 
 body {
     margin: 0 auto;
-
     max-width: 980px;
-    height: 100vh;
 }
 
 main {
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
 
 h1, a {
