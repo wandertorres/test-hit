@@ -9,7 +9,7 @@ type propsButton = {
 export const Button = ( props: propsButton) => {
     return(
         <Link className={ `button-container button-container${ props.type }` } to={ props.link }>
-            <span className="button-title">{ props.title }</span>
+            { props.title }
         </Link>
     );
 }
