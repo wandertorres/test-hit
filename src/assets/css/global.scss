@@ -14,15 +14,17 @@ html {
     border: 1px solid #707070;
     font-size: 62.5%;
 
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
 }
 
 body {
-    margin: 0 auto;
-    max-width: 980px;
+    display: flex;
+    justify-content: center;
 }
 
 main {
+    max-width: 980px;
     padding: 2rem 2rem;
 }
 
