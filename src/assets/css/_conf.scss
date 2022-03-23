@@ -29,6 +29,10 @@ $BREAKPOINT-MOBILE-S: "only screen and (max-width: 320px)";
     }
 
     @media #{$BREAKPOINT-MOBILE-L} {
+        main {
+            padding: 1rem;
+        }
+
         .button-container--nav {
             width: 16rem;
         }
@@ -44,7 +48,7 @@ $BREAKPOINT-MOBILE-S: "only screen and (max-width: 320px)";
         .contact-form {
             padding: 2rem;
 
-            width: 35rem;
+            width: 37rem;
             max-width: 95%;
         }
 
@@ -58,16 +62,32 @@ $BREAKPOINT-MOBILE-S: "only screen and (max-width: 320px)";
     }
 
     @media #{$BREAKPOINT-MOBILE-M} {
+        font-size: 55%;  
+
         main {
             padding: 0.5rem;
         }
-
-        font-size: 55%;
     }
 
     @media #{$BREAKPOINT-MOBILE-S} {
+        font-size: 50%;
+
+        main {
+            padding: 0.2rem;
+        }
+
+        .button-container--nav {
+            width: 14rem;
+        }
+
         .home-content {
-            width: 100%;
+            width: 90%;
+        }
+
+        .contact-form {
+            padding: 1rem;
+
+            max-width: 90%;
         }
     }
 }
