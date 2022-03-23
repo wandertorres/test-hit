@@ -5,7 +5,7 @@
         align-items: center;
         justify-content: flex-end;
 
-        height: 26rem;
+        height: 24rem;
     }
 
     &-logo {
@@ -18,8 +18,8 @@
     &-nav {
         display: flex;
 
-        a {
-            margin: 0 0.5rem;
+        a + a {
+            margin-left: 1.7rem;
         }
     }
 }
