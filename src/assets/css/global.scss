@@ -10,6 +10,8 @@
 }
 
 html {
+    @include resposive;
+
     background: #2D2D2D 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     font-size: 62.5%;
@@ -24,6 +26,10 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     max-width: 980px;
     padding: 2rem 2rem;
 }

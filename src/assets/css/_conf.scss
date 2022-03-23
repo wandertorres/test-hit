@@ -9,21 +9,57 @@ $PRIMARY: #EA916B;
 $SECUNDARY: #E05A4D;
 
 /*|-------------|BREAKPOINTS|-------------*/
-
-// Usage example:  @media #{$BREAKPOINT-DESK}
-
-$BREAKPOINT-DESK: "only screen and (min-width: 1280px)";
-$BREAKPOINT-TABLET-LAND: "only screen and (min-width: 975px)";
-$BREAKPOINT-TABLET: "only screen and (min-width: 600px)";
-$BREAKPOINT-MOBILE-LAND: "only screen and (min-width: 480px)";
+$BREAKPOINT-TABLET: "only screen and (max-width: 768px)";
+$BREAKPOINT-MOBILE-L: "only screen and (max-width: 460px)";
+$BREAKPOINT-MOBILE-M: "only screen and (max-width: 375px)";
+$BREAKPOINT-MOBILE-S: "only screen and (max-width: 320px)";
 
 /*|---------------|MIXINS|---------------*/
 
-@mixin margin-page {
-  width: calc(100% - 40px);
-  margin: 0 auto;
+@mixin resposive {
 
-  @media #{$BREAKPOINT-DESK} {
-    max-width: 1000px;
-  }
+    @media #{$BREAKPOINT-TABLET} {
+        .home-content {
+            width: 90%;
+        }
+
+        .contact-form {
+            width: 80vw;
+        }
+    }
+
+    @media #{$BREAKPOINT-MOBILE-L} {
+        .button-container--nav {
+            width: 16rem;
+        }
+
+        .contact-form {
+            padding: 2rem;
+
+            width: 35rem;
+            max-width: 95%;
+        }
+
+        .form-input_area {
+            flex-direction: column;
+
+            input + input {
+                margin: 1.6rem 0; 
+            }
+        }
+    }
+
+    @media #{$BREAKPOINT-MOBILE-M} {
+        main {
+            padding: 0.5rem;
+        }
+
+        font-size: 55%;
+    }
+
+    @media #{$BREAKPOINT-MOBILE-S} {
+        .home-content {
+            width: 100%;
+        }
+    }
 }
